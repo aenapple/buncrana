@@ -1,0 +1,190 @@
+/* импортирование стилей из файла styles-xs.css в текущий файл стилей только для устройств, которые предоставляют веб-странице viewport, имеющий ширину 543 пикселя или меньше. */
+/* @import url(styles-xs.css) (max-width: 543px); */
+/* <!-- Стили xs-styles.css будут подсоединены к странице только на устройствах c шириной меньше 543 пикселей (включительно) -->
+<link rel="stylesheet" media="screen and (max-width: 543px)" href="styles-xs.css"> */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+html, body {
+	height: 100vh;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: Roboto;
+	font-style: normal;
+}
+
+.wrapper{
+	/* background-color: beige; */
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1100px;
+	margin: 0px auto;
+	padding: 0px 0px;
+}
+
+.header {
+	width: 100%;
+	top: 0;
+	left: 0;
+	/* z-index: 10; */
+	
+	
+}
+
+@media (min-width:600px) {
+	.main__open-small {
+		display: none;
+	}
+}
+
+@media (max-width:600px) {
+	/*
+	.header__body {
+		flex-direction: column;
+	}
+	*/
+	
+	.header__address {
+		display: none;
+	}
+	.header__logo {
+		padding: 20px 20px;
+	}
+
+	.main__open {
+		display: none;
+	}
+	
+	
+
+
+}
+
+.header__body {
+	background-image: url(../img/website_top_2.jpg);
+	background-size: 100%;
+	position: relative;
+	/* z-index: 2; */
+	display: flex;
+	height: 120px;
+	
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__address {
+	padding: 20px 20px;
+}
+
+.header__logo {
+	flex: 0 0 100px;
+}
+.header__logo img {
+	max-width: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	display: block;
+}
+.header__contact {
+	padding: 10px 10px;
+}
+
+.main {
+	flex: 0 1 auto;  /* was 1 1 auto */
+	padding: 0px 0px;
+	width: 100%;
+	height: 100%;
+	/* height: 500px; */
+}
+.main__body {
+	/* background-color: #445162; */
+	/* background-image: url(../img/fon2.jpg);
+	background-size: 100% 100%; */
+	max-width: 100%;
+
+	/* z-index: 2; */
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	align-items: center;
+	margin: 10px 0px 0px 0px;
+}
+.main__body img {
+	max-width: 100%;
+	overflow: hidden;
+	display: block;
+}
+.main__open,
+.main__closed {
+	/*position: absolute;*/
+	
+	margin: -40px 0 0 0;
+	color: white;
+	font-weight: 700;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+.main__open {
+	/* display: none; */
+}
+.main__closed {
+	display: none;
+}
+.main__open-small {
+	/*display: none;*/
+	margin: -50px 0 0 0;
+	color: white;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.main__btn {
+	max-width: 100%;
+	display: flex;
+	justify-content: space-around;
+	/* align-items: center; */
+	/* flex-direction: column; */
+	margin: 10px 0px 10px 0px;
+}
+.main__btn-golf,
+.main__btn-venue {
+	background-color: rgb(157, 189, 165);
+	width: 300px;
+	height: 50px;
+	/*overflow: hidden;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+
+.footer {
+	/*background-color: #f5f5f5;*/
+}
+.footer__row {
+	background-image: url(../img/website_bottom_2.jpg);
+	background-size: 100%;
+	margin: 0 0 0 0;
+	display: flex;
+
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	font-style: italic;
+}
+.footer__row-copy {
+	color: #445162;
+	font-size: 20px;
+	letter-spacing: 0.3px;
+	
+}
