@@ -27,15 +27,6 @@ html, body {
 	padding: 0px 0px;
 }
 
-.header {
-	width: 100%;
-	top: 0;
-	left: 0;
-	/* z-index: 10; */
-	
-	
-}
-
 @media (min-width:600px) {
 	.main__open-small {
 		display: none;
@@ -98,14 +89,16 @@ html, body {
 	flex: 0 1 auto;  /* was 1 1 auto */
 	padding: 0px 0px;
 	width: 100%;
-	height: 100%;
-	/* height: 500px; */
+	/* height: 100%; */
+	height: 500px;
+	min-height: 500px;
 }
 .main__body {
 	/* background-color: #445162; */
-	/* background-image: url(../img/fon2.jpg);
-	background-size: 100% 100%; */
+	/*background-image: url(../img/mid_1.jpg);
+	background-size: 100%;*/
 	max-width: 100%;
+	min-height: 500px;
 
 	/* z-index: 2; */
 	display: flex;
