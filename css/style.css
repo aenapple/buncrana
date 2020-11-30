@@ -4,173 +4,43 @@
 /* <!-- Стили xs-styles.css будут подсоединены к странице только на устройствах c шириной меньше 543 пикселей (включительно) -->
 <link rel="stylesheet" media="screen and (max-width: 543px)" href="styles-xs.css"> */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-html, body {
-  height: 100vh;
+html {
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Roboto;
   font-style: normal;
 }
 
-.wrapper {
-  /* background-color: beige; */
-  min-height: 100%;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0px auto;
-  padding: 0px 0px;
-}
-
-@media (min-width: 600px) {
-  .main__open-small {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  /*
-	.header__body {
-		flex-direction: column;
-	}
-	*/
-  .header__address {
-    display: none;
-  }
-  .header__logo {
-    padding: 20px 20px;
-  }
-  .main__open {
-    display: none;
-  }
-}
-
-.header__body {
-  background-image: url(../img/website_top_2.jpg);
-  background-size: 100%;
-  position: relative;
-  /* z-index: 2; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 120px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__address {
-  padding: 20px 20px;
-}
-
-.header__logo {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100px;
-          flex: 0 0 100px;
-}
-
-.header__logo img {
-  max-width: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-  display: block;
-}
-
-.header__contact {
-  padding: 10px 10px;
+body {
+  padding: 0 10px;
+  font-family: Roboto;
+  font-style: normal;
 }
 
 .main {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  /* was 1 1 auto */
-  padding: 0px 0px;
-  width: 100%;
+  background: url(../img/websait_mid_9_2.jpg) 0 0/auto 100% no-repeat;
+  /* background-image: url('../img/mid_1.jpg');
+  background-repeat: no-repeat;
+  background-position: center; */
+  max-width: 1200px;
+  height: 600px;
+  margin: 0px auto;
   /* height: 100%; */
-  height: 500px;
-  min-height: 500px;
+  /* height: 500px; */
 }
 
-.main__body {
-  /* background-color: #445162; */
-  /*background-image: url(../img/mid_1.jpg);
-	background-size: 100%;*/
-  max-width: 100%;
-  min-height: 500px;
-  /* z-index: 2; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  /* justify-content: space-between; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 0px 0px 0px;
+.main__logo {
+  position: relative;
+  top: 10px;
+  left: 10%;
 }
 
-.main__body img {
-  max-width: 100%;
-  overflow: hidden;
-  display: block;
-}
-
-.main__open,
-.main__closed {
-  /*position: absolute;*/
-  margin: -40px 0 0 0;
-  color: white;
-  font-weight: 700;
-  font-size: 30px;
-  letter-spacing: 2px;
-}
-
-.main__open {
-  /* display: none; */
-}
-
-.main__closed {
-  display: none;
-}
-
-.main__open-small {
-  /*display: none;*/
-  margin: -50px 0 0 0;
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-.main__btn {
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  /* align-items: center; */
-  /* flex-direction: column; */
-  margin: 10px 0px 10px 0px;
+.main__logo img {
+  width: 300px;
 }
 
 .main__btn-golf,
-.main__btn-venue {
+.main__btn-venue,
+.main__btn-book {
   background-color: #9dbda5;
   width: 300px;
   height: 50px;
@@ -190,8 +60,75 @@ html, body {
   letter-spacing: 1px;
 }
 
+.main__btn-golf {
+  position: relative;
+  top: 150px;
+  left: 40px;
+  z-index: 10;
+}
+
+.main__btn-venue {
+  position: relative;
+  top: 180px;
+  left: 40px;
+  z-index: 9;
+}
+
+.main__btn-book {
+  position: relative;
+  top: 130px;
+  left: 60%;
+  z-index: 8;
+}
+
+.main__str-visit {
+  /*padding: 20px 20px;*/
+  position: relative;
+  top: -110px;
+  left: 60%;
+  z-index: 8;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.main__str-address {
+  /*padding: 20px 20px;*/
+  position: relative;
+  top: -110px;
+  left: 57%;
+  z-index: 8;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.main__str-contact {
+  position: relative;
+  top: -90px;
+  left: 60%;
+  z-index: 7;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.main__list-contact {
+  position: relative;
+  top: -100px;
+  left: 55%;
+  z-index: 7;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 .footer {
-  /*background-color: #f5f5f5;*/
+  max-width: 1200px;
+  height: 100px;
+  margin: 10px auto;
 }
 
 .footer__row {
@@ -209,6 +146,7 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   font-style: italic;
+  font-weight: 700;
 }
 
 .footer__row-copy {

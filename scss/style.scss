@@ -7,146 +7,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-html, body {
-	height: 100vh;
+html{
 	/* font-family: Arial, Helvetica, sans-serif; */
 	font-family: Roboto;
 	font-style: normal;
 }
 
-.wrapper{
-	/* background-color: beige; */
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-}
-.container {
-	max-width: 1100px;
-	margin: 0px auto;
-	padding: 0px 0px;
-}
-
-@media (min-width:600px) {
-	.main__open-small {
-		display: none;
-	}
-}
-
-@media (max-width:600px) {
-	/*
-	.header__body {
-		flex-direction: column;
-	}
-	*/
-	
-	.header__address {
-		display: none;
-	}
-	.header__logo {
-		padding: 20px 20px;
-	}
-
-	.main__open {
-		display: none;
-	}
-	
-	
-
-
-}
-
-.header__body {
-	background-image: url(../img/website_top_2.jpg);
-	background-size: 100%;
-	position: relative;
-	/* z-index: 2; */
-	display: flex;
-	height: 120px;
-	
-	justify-content: space-between;
-	align-items: center;
-}
-
-.header__address {
-	padding: 20px 20px;
-}
-
-.header__logo {
-	flex: 0 0 100px;
-}
-.header__logo img {
-	max-width: 100%;
-	border-radius: 50%;
-	overflow: hidden;
-	display: block;
-}
-.header__contact {
-	padding: 10px 10px;
+body {
+	padding: 0 10px;
+	font-family: Roboto;
+	font-style: normal;
 }
 
 .main {
-	flex: 0 1 auto;  /* was 1 1 auto */
-	padding: 0px 0px;
-	width: 100%;
+	// border: 5px solid red;
+	background: url(../img/websait_mid_9_2.jpg) 0 0/auto 100% no-repeat;
+  /* background-image: url('../img/mid_1.jpg');
+  background-repeat: no-repeat;
+  background-position: center; */
+	// border-radius: 15px;
+	// box-shadow: 0 0 10px #000000;
+	max-width: 1200px;
+	height: 600px;
+	margin: 0px auto;
 	/* height: 100%; */
-	height: 500px;
-	min-height: 500px;
-}
-.main__body {
-	/* background-color: #445162; */
-	/*background-image: url(../img/mid_1.jpg);
-	background-size: 100%;*/
-	max-width: 100%;
-	min-height: 500px;
-
-	/* z-index: 2; */
-	display: flex;
-	flex-direction: column;
-	/* justify-content: space-between; */
-	align-items: center;
-	margin: 10px 0px 0px 0px;
-}
-.main__body img {
-	max-width: 100%;
-	overflow: hidden;
-	display: block;
-}
-.main__open,
-.main__closed {
-	/*position: absolute;*/
-	
-	margin: -40px 0 0 0;
-	color: white;
-	font-weight: 700;
-	font-size: 30px;
-	letter-spacing: 2px;
-}
-.main__open {
-	/* display: none; */
-}
-.main__closed {
-	display: none;
-}
-.main__open-small {
-	/*display: none;*/
-	margin: -50px 0 0 0;
-	color: white;
-	font-weight: 700;
-	font-size: 20px;
-	letter-spacing: 2px;
+	/* height: 500px; */
+	// padding: 30px;
 }
 
-.main__btn {
-	max-width: 100%;
-	display: flex;
-	justify-content: space-around;
-	/* align-items: center; */
-	/* flex-direction: column; */
-	margin: 10px 0px 10px 0px;
+.main__logo {
+	position: relative;
+	top: 10px;
+	left: 10%;
 }
+.main__logo img {
+	width: 300px;
+}
+
 .main__btn-golf,
-.main__btn-venue {
+.main__btn-venue,
+.main__btn-book {
 	background-color: rgb(157, 189, 165);
 	width: 300px;
 	height: 50px;
@@ -158,11 +58,76 @@ html, body {
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 1px;
+	
+}
+.main__btn-golf {
+	position: relative;
+	top: 150px;
+	left: 40px;
+	z-index: 10;
+}
+.main__btn-venue {
+	position: relative;
+	top: 180px;
+	left: 40px;
+	z-index: 9;
+}
+.main__btn-book {
+	position: relative;
+	top: 130px;
+	left: 60%;
+	z-index: 8;
 }
 
+.main__str-visit {
+	/*padding: 20px 20px;*/
+	position: relative;
+	top: -110px;
+	left: 60%;
+	z-index: 8;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.main__str-address {
+	/*padding: 20px 20px;*/
+	position: relative;
+	top: -110px;
+	left: 57%;
+	z-index: 8;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.main__str-contact{
+	// padding: 0px;
+	position: relative;
+	top: -90px;
+	left: 60%;
+	z-index: 7;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.main__list-contact{
+	// padding: 0px;
+	position: relative;
+	top: -100px;
+	left: 55%;
+	z-index: 7;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
 
 .footer {
-	/*background-color: #f5f5f5;*/
+	// border: 5px solid red;
+	max-width: 1200px;
+	height: 100px;
+	margin:10px auto;
 }
 .footer__row {
 	background-image: url(../img/website_bottom_2.jpg);
@@ -174,6 +139,7 @@ html, body {
 	justify-content: center;
 	align-items: center;
 	font-style: italic;
+	font-weight: 700;
 }
 .footer__row-copy {
 	color: #445162;
