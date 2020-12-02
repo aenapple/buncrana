@@ -89,7 +89,7 @@ body {
 .main__str-address,
 .main__str-contact,
 .main__list-contact,
-.main_copyright {
+.main__copyright {
   position: relative;
   font-size: 16px;
   font-weight: 700;
@@ -122,7 +122,7 @@ body {
   font-style: italic;
 }
 
-.main_copyright {
+.main__copyright {
   top: 530px;
   left: 10%;
   z-index: 4;
