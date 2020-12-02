@@ -72,11 +72,14 @@ body {
 }
 
 @media (max-width:767px) {
+	.main__btn-golf {
+		top: 280px;
+	}
 	.main__btn-venue {
-		top: 370px;
+		top: 320px;
 	}
 	.main__btn-book {
-		top: 410px;
+		top: 360px;
 		left: 40px;
 	}
 }
@@ -84,7 +87,8 @@ body {
 .main__str-visit,
 .main__str-address,
 .main__str-contact,
-.main__list-contact {
+.main__list-contact,
+.main_copyright {
 	position: relative;
 	font-size: 16px;
 	font-weight: 700;
@@ -114,6 +118,12 @@ body {
 	z-index: 4;
 	font-style: italic;
 }
+.main_copyright {
+	top: 530px;
+	left: 10%;
+	z-index: 4;
+	font-style: italic;
+}
 
 @media (max-width:767px) {
 	.main__str-visit {
@@ -132,29 +142,7 @@ body {
 		top:10px;
 		left: 0px;
 	}
+
 }
 
-.footer {
-	// border: 5px solid red;
-	max-width: 1200px;
-	// height: 100px;
-	margin:10px auto;
-}
-.footer__row {
-	background-image: url(../img/website_bottom_2.jpg);
-	background-size: 100%;
-	margin: 0 0 0 0;
-	display: flex;
 
-	height: 70px;
-	justify-content: center;
-	align-items: center;
-	font-style: italic;
-	font-weight: 700;
-}
-.footer__row-copy {
-	color: #445162;
-	font-size: 20px;
-	letter-spacing: 0.3px;
-	
-}
